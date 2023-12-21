@@ -1,0 +1,56 @@
+import React from "react";
+const taskbar = () => {
+  return (
+    <div className="taskbar-cont">
+      <div>
+        <ul className="taskbar-links">
+          <li>
+            <a href="/" className="taskbar-link active-link">
+              All Posts(32)
+            </a>
+          </li>
+          <li>
+            <a href="/" className="taskbar-link">
+              Article
+            </a>
+          </li>
+          <li>
+            <a href="/" className="taskbar-link">
+              Event
+            </a>
+          </li>
+          <li>
+            <a href="/" className="taskbar-link">
+              Education
+            </a>
+          </li>
+          <li>
+            <a href="/" className="taskbar-link">
+              Job
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div className="taskbar-btns">
+        <button className="post-btn">
+          Write a Post
+          <img
+            src="./assets/images/downArrow.svg"
+            alt=""
+            className="post-btn-icon"
+          />
+        </button>
+        <button className="join-btn">
+          <img
+            src="./assets/images/join_grp.svg"
+            alt=""
+            className="join-btn-icon"
+          />
+          Join Group
+        </button>
+      </div>
+    </div>
+  );
+};
+
+export default taskbar;
