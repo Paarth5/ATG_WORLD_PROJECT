@@ -9,10 +9,10 @@ function App() {
     <div className="App">
       <Navbar />
       <Homehero />
-      <div className="container">
+      <div className="container-taskbar">
         <Taskbar />
         <div className="main-body">
-          <div>
+          <div className="comb-card">
             {data.map((d) => {
               return <Card key={d.id} {...d} />;
             })}

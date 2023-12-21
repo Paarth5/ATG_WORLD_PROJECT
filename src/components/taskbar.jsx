@@ -1,5 +1,9 @@
-import React from "react";
-const taskbar = () => {
+import React, { useState } from "react";
+const Taskbar = () => {
+  const [joined, setJoined] = useState(false);
+  const handleClick = () => {
+    return setJoined(!joined);
+  };
   return (
     <div className="taskbar-cont">
       <div>
@@ -40,17 +44,19 @@ const taskbar = () => {
             className="post-btn-icon"
           />
         </button>
-        <button className="join-btn">
-          <img
-            src="./assets/images/join_grp.svg"
-            alt=""
-            className="join-btn-icon"
-          />
-          Join Group
+        <button className="join-btn" onClick={handleClick}>
+          {joined || (
+            <img
+              src="./assets/images/join_grp.svg"
+              alt=""
+              className="join-btn-icon"
+            />
+          )}
+          {joined ? "Leave Group" : "Join Group"}
         </button>
       </div>
     </div>
   );
 };
 
-export default taskbar;
+export default Taskbar;

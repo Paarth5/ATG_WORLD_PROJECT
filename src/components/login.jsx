@@ -38,7 +38,7 @@ const login = () => {
           </div>
           <div class="col-12">
             <button type="submit" class="Sign-in-option">
-              <img src=".\assets\images\google.svg" alt="Google asad" />
+              <img src=".\assets\images\google.svg" alt="Google" />
               Sign up with Google
             </button>
             <a href="#" className="forgotpass">

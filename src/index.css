@@ -60,6 +60,8 @@ body {
     ),
     url("../public/assets/images/Background\ top.jpg");
   color: #fff;
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -412,4 +414,133 @@ ul {
   letter-spacing: -0.096px;
   text-decoration: none;
   padding: 0 10px;
+}
+.container-taskbar {
+  max-width: 80%;
+  margin: auto;
+}
+
+@media only screen and (max-width: 1150px) {
+  .container-taskbar {
+    max-width: 95%;
+  }
+  .join-btn {
+    margin-right: 20px;
+  }
+  .active-link {
+    margin-left: 20px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .main-body {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .join-btn {
+    margin-right: 10px;
+  }
+  .active-link {
+    margin-left: 10px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .nav-cont {
+    display: none;
+  }
+  .home-hero-head {
+    margin: 0 100px;
+  }
+  .home-hero-members {
+    margin: 0 0 80px 100px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .card-cont {
+    max-width: 90%;
+  }
+  .comb-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card-photo {
+    width: 100%;
+  }
+  .taskbar-link {
+    display: none;
+  }
+  .active-link {
+    display: block;
+    margin-bottom: 20px;
+  }
+  .home-hero-head {
+    margin: 0 50px;
+  }
+  .home-hero-members {
+    margin: 0 0 70px 50px;
+  }
+  .join-btn {
+    position: absolute;
+    top: 20px;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid white;
+    right: 30px;
+  }
+  .taskbar-cont {
+    border-bottom: none;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .home-hero-head {
+    margin: 0 50px;
+  }
+  .home-hero-members {
+    font-size: 15px;
+    margin: 0 0 50px 50px;
+  }
+  .join-btn {
+    position: absolute;
+    top: 20px;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid white;
+    right: 15px;
+  }
+  .card-head {
+    font-size: 16px;
+  }
+  .card-subhead {
+    font-size: 14px;
+  }
+  .event-info {
+    font-size: 12px;
+  }
+  .author-name {
+    font-size: 14px;
+  }
+  .card-stats {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .card-views,
+  .card-views-icon {
+    display: none;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .home-hero-head {
+    margin: 0 20px;
+  }
+  .home-hero-members {
+    font-size: 15px;
+    margin: 0 0 150px 20px;
+  }
+  .join-btn {
+    position: absolute;
+    top: 20px;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid white;
+    right: 15px;
+  }
 }

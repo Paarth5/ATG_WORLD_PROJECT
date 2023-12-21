@@ -81,7 +81,11 @@ function Card(props) {
           <p className="author-name">{props.author}</p>
         </div>
         <div className="card-stats">
-          <img src=".\assets\images\views.svg" alt="Views" />
+          <img
+            src=".\assets\images\views.svg"
+            alt="Views"
+            className="card-views-icon"
+          />
           <p className="card-views">1.4k views</p>
           <button className="share-btn">
             <img src=".\assets\images\share.svg" alt="Share" />
